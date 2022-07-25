@@ -1,0 +1,20 @@
+.my_taggle{
+    font-size: 25px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.red{
+    color: brown;
+}
+
+.green{
+    color: green;
+}
+
+.titolo{
+    font-size: 5rem;
+    color: rgb(27, 164, 9);
+    text-align: center;
+}
+

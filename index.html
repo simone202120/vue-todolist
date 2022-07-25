@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>Document</title>
+    </head>
+    <body>
+        <div id="app">
+            <div class="container mt-5">
+
+                <h1 class="titolo mb-5">Lista cose da fare</h1>
+                <div class="input-group mb-3">
+                    <input v-model='nuovoTask' type="text" class="form-control" placeholder="Task da aggiungere" aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <button @click='aggiungitask' class="btn btn-warning" type="button" id="button-addon2">Aggiugngi Elemento alla lista</button>
+                </div>
+            
+
+            <ul class="list-group">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                A list item
+                <div>
+                    <span class="my_taggle red"><i class="far fa-times-circle"></i></span>
+                    
+                    <span class="my_taggle green"><i class="far fa-check-circle"></i></span>
+                </div>
+                </li>
+            
+            </ul>
+            </div>
+        </div>
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+    </body>
+</html>
