@@ -6,11 +6,16 @@ var app= new Vue(
             arrayTask:[]
         },
         methods:{
-            aggiugngitask(){
-                this.arrayTask.push(nuovoTask);
+            aggiungitask(){
+                this.arrayTask.push({task: this.nuovoTask, stato: true});
+                console.log(this.arrayTask)
+            },
+
+            eliminatask(){
+
             }
 
-            
+        
         },
        
     }
