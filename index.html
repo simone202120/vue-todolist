@@ -22,11 +22,11 @@
 
                 <ul class="list-group">
                     <li v-for="(Task, indice) in arrayTask" class="list-group-item d-flex justify-content-between align-items-center">
-                        {{Task}}
+                        {{Task.task}}
                         <div>
-                            <span class="my_taggle red"><i class="far fa-times-circle"></i></span>
+                            <span @click="eliminatask(indice) in arrayTask"class="my_taggle red"><i class="far fa-times-circle"></i></span>
                             
-                            <span class="my_taggle green"><i class="far fa-check-circle"></i></span>
+                            <span @click ="completato" class="my_taggle green"><i class="far fa-check-circle"></i></span>
                         </div>
                     </li>
                 </ul>
