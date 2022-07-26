@@ -3,7 +3,9 @@ var app= new Vue(
         el:'#app',
         data:{
             nuovoTask: "",
-            arrayTask:[]
+            arrayTask:[
+               
+            ]
         },
 
 
@@ -25,9 +27,9 @@ var app= new Vue(
             },
 
             completato(indice){
-               this.arrayTask[indice].stato = true;
+               this.arrayTask[indice].stato = false;
                 console.log(this.arrayTask[indice].stato)
-               
+                
                
             }
         },
